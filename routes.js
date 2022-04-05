@@ -5,7 +5,7 @@ import Home from './pages/Home';
 
 import Header from './Components/Header';
 import Filme from './pages/Filme';
-import Favoritos from './pages/Fovoritos';
+import Favoritos from './pages/Favoritos';
 
 const Routes = () => {
     return (
