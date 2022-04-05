@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './filme-info.css';
 import { useParams, useHistory } from 'react-router-dom';
 import api from '../../services/api';
+import { toast } from 'react-toastify';
 
 export default function Filme(){
 // essa é a função que vai renderizar cada página de filme de acordo com o ID da API
@@ -46,7 +47,7 @@ export default function Filme(){
         // o some nos retorna True ou False em relação a ter um filme com o mesmo nome na lista
 
         if (hasFilme) {
-            alert('Você já possui este filme salvo.')
+            toast.info('Você já possui este filme salvo');
             return;
         }
         // se tem esse filme na lista, alerta o usuário e para a execução
@@ -54,7 +55,7 @@ export default function Filme(){
 
         filmesSalvos.push(filme);
         localStorage.setItem('filmes', JSON.stringify(filmesSalvos));
-        alert('Filme Salvo com Sucesso!');
+        toast.success('Filme Salvo com Sucesso!');
         // adiciona o filme à lista do usuário
     }
 
