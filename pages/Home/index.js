@@ -35,9 +35,10 @@ export default function Home() {
         {filmes.map((filme)=>{
           return(
             <article key={filme.id} >
-              <strong>{filme.nome}</strong>
-              <img src={filme.foto} alt={filme.nome} ></img>
-              <Link to={`/filme/${filme.id}`}>Acessar</Link>
+              <Link to={`/filme/${filme.id}`}>
+                <img src={filme.foto} alt={filme.nome} ></img>
+                <h3>{filme.nome}</h3>
+              </Link>
             </article>
           )
         })}

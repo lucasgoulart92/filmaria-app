@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 .app {
     display: flex;
     width: 100%;

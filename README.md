@@ -19,4 +19,6 @@ Para exibir alertas para o usuário
 
 
 ## Alterações que realizei no projeto
-[] ALterações CSS para modernizar o layout
+-[x] ALterações CSS para modernizar o layout
+-[ ] Melhorar versão mobile
+-[ ] Criar versão Desktop

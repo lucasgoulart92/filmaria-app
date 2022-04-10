@@ -2,10 +2,11 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 60px;
-    background-color: brown;
+    height: 80px;
+    background-color: rgb(195, 4, 4);
+    padding: 0 10px;
 }
 
 .logo {
@@ -16,9 +17,21 @@ header {
 }
 
 .favoritos {
-    background-color: #fff;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    transition: 0.3s ease;
+}
+
+.favoritos:hover {
+    background-color: brown;
+    border-color: brown;
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 35px;
+    }
 }

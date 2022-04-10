@@ -25,15 +25,15 @@ export default function Favoritos(){
 
     return(
         <div id="meus-filmes">
-            <h1>Meus Filmes</h1>
+            <h1>Seus filmes salvos</h1>
 
-            {filmes.length === 0 && <span>Você não possui nenhum filme salvo</span>}
+            {filmes.length === 0 && <p>Você ainda não possui nenhum filme salvo, <Link to="/" >volte à tela inicial</Link> para escolher</p>}
 
             <ul>
                 {filmes.map((item)=>{
                     return(
                         <li key={item.id}>
-                            <span>{item.nome}</span>
+                            <Link to={`/filme/${item.id}`}>{item.nome}</Link>
 
                             <div>
                                 <Link to={`/filme/${item.id}`} >Ver Detalhes</Link>

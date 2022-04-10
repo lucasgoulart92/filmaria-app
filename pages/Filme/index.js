@@ -70,19 +70,21 @@ export default function Filme(){
 
     return(
         <div className="filme-info">
-            <h1> {filme.nome} </h1>
             <img src={filme.foto} />
+            <div className="filme-info-text">
+                <h1> {filme.nome} </h1>
+                <p>
+                    {filme.sinopse}
+                </p>
 
-            <h3>Sinopse</h3>
-            {filme.sinopse}
-
-            <div className="botoes">
-                <button onClick={ salvaFilme } >Salvar</button>
-                <button>
-                    <a target="_blank" href={`https://youtube.com/results?search_query=${filme.nome} trailer`}>
-                        Trailer
-                    </a>
-                </button>
+                <div className="botoes">
+                    <button onClick={ salvaFilme } >Salvar</button>
+                    <button>
+                        <a target="_blank" href={`https://youtube.com/results?search_query=${filme.nome} trailer`}>
+                            Trailer
+                        </a>
+                    </button>
+                </div>
             </div>
         </div>
     )
