@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 // precisamos importar as páginas dentro do Routes.js
@@ -6,17 +6,19 @@ import Home from './pages/Home';
 import Header from './Components/Header';
 import Filme from './pages/Filme';
 import Favoritos from './pages/Favoritos';
+import Erro from './pages/Erro';
 
 const Routes = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <Header/>
-            <Switch> 
+            <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/filme/:id" component={Filme}/>
                 <Route exact path="/favoritos" component={Favoritos}/>
+                <Route path="*" component={Erro} />
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 }
 
