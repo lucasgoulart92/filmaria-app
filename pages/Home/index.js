@@ -36,7 +36,9 @@ export default function Home() {
           return(
             <article key={filme.id} >
               <Link to={`/filme/${filme.id}`}>
-                <img src={filme.foto} alt={filme.nome} ></img>
+                <div className="photoframe">
+                  <img src={filme.foto} alt={filme.nome} ></img>
+                </div>
                 <h3>{filme.nome}</h3>
               </Link>
             </article>

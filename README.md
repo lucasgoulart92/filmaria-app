@@ -7,18 +7,22 @@ Também é possível salvar filmes em uma aba de Favoritos e deletar caso necess
 
 ## Recursos utilizados e necessários para rodar o projeto
 
-### Axios:
+#### Axios:
 Para buscar os dados na API e exibir os filmes
 
-### React-Router-DOM:
+#### React-Router-DOM:
 Para criar as rotas e páginas do projeto
 
-### Toastify
+#### Toastify
 Para exibir alertas para o usuário
 
 
 
 ## Alterações que realizei no projeto
--[x] ALterações CSS para modernizar o layout
--[ ] Melhorar versão mobile
--[ ] Criar versão Desktop
+[x] - Alterações CSS para modernizar o layout
+[x] - Rodapé com minhas informações
+[x] - Criar versão Desktop da tela inicial
+[ ] - CSS página Filme no desktop
+[ ] - Colocar SVG de salvar e abrir na tela inicial
+[ ] - Colocar SVG de lixeira na tela de Favoritos
+[ ] - Conferir se o filme já está salvo e colocar estrela preenchida do lado do nome na tela inicial

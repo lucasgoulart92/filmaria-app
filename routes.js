@@ -4,6 +4,7 @@ import Home from './pages/Home';
 // precisamos importar as páginas dentro do Routes.js
 
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Filme from './pages/Filme';
 import Favoritos from './pages/Favoritos';
 import Erro from './pages/Erro';
@@ -18,6 +19,7 @@ const Routes = () => {
                 <Route exact path="/favoritos" component={Favoritos}/>
                 <Route path="*" component={Erro} />
             </Switch>
+            <Footer/>
         </Router>
     )
 }
