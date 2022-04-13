@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './home.css';
 import api from '../../services/api';
 
+import logo from '../../icons/logo.png';
+
 import {Link} from 'react-router-dom';
 
 
@@ -27,7 +29,6 @@ export default function Home() {
     loadFilmes();
 
   }, []);
-
 
   return (
     <div className="container" >

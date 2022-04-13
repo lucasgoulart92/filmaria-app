@@ -40,10 +40,26 @@
 
 .filme-info button a {
     text-decoration: none;
-    color: brown;
+    color: rgb(226, 42, 214);
 }
 
 .filme-info button:hover {
     background-color: #fff;
     color: #000;
+}
+
+img.loading-image {
+    filter: grayscale(100%);
+    margin: 200px 0;
+}
+
+@media (min-width:1024px) {
+    .filme-info {
+        width: 960px;
+        margin: 0 auto;
+        padding: 90px 0 150px 0;
+    }
+    .filme-info-text p {
+        width: 640px;
+    }
 }

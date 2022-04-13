@@ -3,6 +3,7 @@ import './filme-info.css';
 import { useParams, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 import { toast } from 'react-toastify';
+import logo from '../../icons/logo.png';
 
 export default function Filme(){
 // essa é a função que vai renderizar cada página de filme de acordo com o ID da API
@@ -63,7 +64,7 @@ export default function Filme(){
         // vai renderizar esta mensagem enquanto o filme carrega da API
         return(
             <div>
-                <h1>Carregando...</h1>
+                <img className="loading-image" src={logo}></img>
             </div>
         )
     }

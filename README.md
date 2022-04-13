@@ -19,10 +19,11 @@ Para exibir alertas para o usuário
 
 
 ## Alterações que realizei no projeto
-[x] - Alterações CSS para modernizar o layout
-[x] - Rodapé com minhas informações
-[x] - Criar versão Desktop da tela inicial
-[ ] - CSS página Filme no desktop
-[ ] - Colocar SVG de salvar e abrir na tela inicial
-[ ] - Colocar SVG de lixeira na tela de Favoritos
-[ ] - Conferir se o filme já está salvo e colocar estrela preenchida do lado do nome na tela inicial
+- [x] Alterações CSS para modernizar o layout
+- [x] Rodapé com minhas informações
+- [x] Criar versão Desktop da tela inicial
+- [x] CSS página Filme no desktop
+- [ ] Colocar SVG de salvar na tela inicial
+- [x] Colocar SVG de lixeira na tela de Favoritos
+- [ ] Conferir se o filme já está salvo e colocar estrela preenchida do lado do nome na tela inicial
+- [x] Criar logo

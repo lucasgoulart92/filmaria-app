@@ -49,6 +49,10 @@ article img:hover {
     text-decoration: underline;
 }
 
+img.loading-image {
+    filter: grayscale(100%);
+    margin: 200px 0;
+}
 
 
 @media (min-width: 1024px) {
